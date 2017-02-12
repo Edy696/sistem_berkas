@@ -61,6 +61,7 @@ class Agenda_model extends MY_Model {
     }
 
     function total_rows(){
+        // $this->filter_data();
         return $this->get(true);
     }
 }
