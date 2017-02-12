@@ -1,5 +1,5 @@
 <?php
-class Agenda_model extends MY_Model {
+class Agenda_m extends MY_Model {
 
     protected $table_name = 'agenda';
     private $primary_key = 'code';
@@ -10,10 +10,10 @@ class Agenda_model extends MY_Model {
     }
 
     public function get_agenda()
-	{ 
+    { 
         $query = $this->db->get($this->table_name);
         return $query->result_array();
-	}
+    }
 
     public function get_agenda_by_id($id)
     { 
@@ -24,10 +24,10 @@ class Agenda_model extends MY_Model {
         return $query->result_array();
     }
 
-	public function add_agenda($agenda){
+    public function add_agenda($agenda){
         $this->db->insert($this->table_name,$agenda);
         return $this->db->affected_rows();
-	}
+    }
 
     public function save($agenda){
         $this->db->set('agenda',$agenda['agenda']);
@@ -61,7 +61,6 @@ class Agenda_model extends MY_Model {
     }
 
     function total_rows(){
-        // $this->filter_data();
         return $this->get(true);
     }
 }
