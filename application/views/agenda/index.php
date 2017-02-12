@@ -1,22 +1,20 @@
-<table id="my-dg" style="width:100%;height:100%">
+<table id="my-dg" title="Custom DataGrid Pager" style="width:700px;height:250px">
 </table>
 <script type="text/javascript">
     var dg = $("#my-dg");
     var url = '<?php echo site_url('agenda/data');?>';
     var idx = undefined;
     var agenda;
-    
     dg.datagrid({
         fitColumns:true,
         singleSelect:true,
         pagination:true,
         rownumbers:true,
-        pageSize: 30,
         url: '<?php echo site_url('agenda/data');?>',
-        columns:[[
-            {field:'code',title:'Code'},
-            {field:'agenda',title:'Agenda',width:200,sortable:true},
-            {field:'price',title:'Price',width:130,align:'right',sortable:true}
+         columns:[[
+            {field:'code',title:'Code',width:80},
+            {field:'agenda',title:'Agenda',width:100,sortable:true},
+            {field:'price',title:'Price',width:80,align:'right',sortable:true}
         ]],
         onClickRow : function(index,row){
             console.log(row);
