@@ -49,14 +49,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Agenda';
-$route['404_override'] = '';
-$route['translate_uri_dashes'] = FALSE;
+$route['default_controller'] = 'agenda';
+// $route['404_override'] = '';
+// $route['translate_uri_dashes'] = FALSE;
 
-$route['agenda/(:num)'] = 'agenda/save/$1';
-$route['agenda/save'] = 'agenda/add';
-$route['agenda'] = 'agenda';
+// $route['agenda/(:num)'] = 'agenda/save/$1';
+// $route['agenda/save'] = 'agenda/add';
+// $route['agenda'] = 'agenda';
 
-$route['user/(:num)'] = 'user/save/$1';
-$route['user/save'] = 'user/add';
-$route['user'] = 'user';
+// $route['user/(:num)'] = 'user/save/$1';
+// $route['user/save'] = 'user/add';
+// $route['user'] = 'user';
