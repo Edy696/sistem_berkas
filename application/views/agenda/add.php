@@ -26,7 +26,6 @@
 <?php
 	}else{
         $value = $agenda[0]; 
-        // echo form_open('agenda/save/'.$value['code']);    
 ?>
     <div class="easyui-panel" title="Rubah Agenda" style="width:100%;max-width:400px;padding:30px 60px;">
         <form id="ff" method="post" >
@@ -46,19 +45,7 @@
             <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm('update')" style="width:80px">Simpan</a>
             <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Bersihkan</a>
         </div>
-    </div><!-- 
-
-    <input type="hidden" name="action" value="save"/>
-	<label for="Code">Code</label>
-    <input type="input" name="code" value="<?php echo $value['code']; ?>" disabled/><br />
-
-    <label for="agenda">Agenda</label>
-    <textarea name="agenda"><?php echo $value['agenda']; ?></textarea><br />
-
-    <label for="price">Price</label>
-    <input type="input" name="price" value="<?php echo $value['price']; ?>" /><br />
-
-    <input type="submit" name="submit" value="Simpan" /> -->
+    </div>
 <?php
 	}
 ?>

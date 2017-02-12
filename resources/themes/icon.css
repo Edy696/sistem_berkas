@@ -4,8 +4,14 @@
 .icon-add{
 	background:url('icons/edit_add.png') no-repeat center center;
 }
+.icon-binder{
+	background:url('icons/binder.png') no-repeat center center;
+}
 .icon-edit{
 	background:url('icons/pencil.png') no-repeat center center;
+}
+.icon-edit_document{
+	background:url('icons/edit_document.png') no-repeat center center;
 }
 .icon-clear{
 	background:url('icons/clear.png') no-repeat center center;
@@ -33,6 +39,9 @@
 }
 .icon-search{
 	background:url('icons/search.png') no-repeat center center;
+}
+.icon-setting{
+	background:url('icons/setting.png') no-repeat center center;
 }
 .icon-print{
 	background:url('icons/print.png') no-repeat center center;
@@ -66,6 +75,9 @@
 }
 .icon-more{
 	background:url('icons/more.png') no-repeat center center;
+}
+.icon-user{
+	background:url('icons/user.png') no-repeat center center;
 }
 
 
